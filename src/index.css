@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+/* Fonts are preconnected in index.html for better performance */
 
 :root {
   --primary-yellow: #FFCE00;
@@ -355,6 +355,91 @@ body {
   color: rgba(255, 206, 0, 0.2);
 }
 
+@media (max-width: 1024px) {
+  .app-container {
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 32px 24px;
+    border-radius: 24px;
+  }
+
+  /* Center logo for mobile */
+  .brand-logo {
+    top: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    height: 40px;
+  }
+
+  .login-card h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .step-roadmap {
+    margin-bottom: 20px;
+  }
+
+  .main-btn {
+    padding: 12px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .otp-container {
+    gap: 8px;
+  }
+
+  .otp-box {
+    width: 42px;
+    height: 54px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 24px 20px;
+  }
+
+  .brand-logo {
+    top: 20px;
+    height: 36px;
+  }
+
+  .otp-container {
+    gap: 6px;
+    margin: 24px 0;
+    justify-content: center;
+  }
+
+  .otp-box {
+    width: 34px;
+    height: 44px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .step-line {
+    width: 15px;
+  }
+
+  .divider {
+    margin: 16px 0;
+  }
+}
+
 /* Particles styling */
 .particles {
   position: absolute;
@@ -373,6 +458,7 @@ body {
   border-radius: 50%;
   opacity: 0.2;
   filter: blur(8px);
+  will-change: transform, opacity;
   animation: float 20s infinite ease-in-out;
 }
 

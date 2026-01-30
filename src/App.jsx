@@ -267,7 +267,14 @@ function App() {
       {/* Brand Logo Top Right */}
       <img src="/logo.png" alt="Brand Logo" className="brand-logo" />
 
-      <video autoPlay muted loop playsInline className="background-video">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        className="background-video"
+      >
         <source src="/Subtle_natural_motion_1080p_202601301326.mp4" type="video/mp4" />
       </video>
 
